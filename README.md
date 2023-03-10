@@ -5,6 +5,5 @@
 **食用方式**:
 
 ```shell
-python3 pdg_converter.py -s "your book filepath" # 转换一个pdf文件
-python3 pdg_converter.py -r "your books filepath" # 转换多个个pdf文件
+python3 pdg_converter.py #选择压缩文价包，然后等待片刻。
 ```
