@@ -43,7 +43,7 @@ def extract(file_path,password_file="passwords.txt"):
             return
         file_type = os.path.splitext(file_path)[-1][1:].lower()
         # 验证安装包是否有密码
-        if file_type == ("zip" or "uvz"):
+        if file_type == "zip" or file_type == "uvz":
             zp = zipfile.ZipFile(file_path)
             for l in zp.infolist():
                 is_encrypted = l.flag_bits & 0x1
